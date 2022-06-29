@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B11F1F"
+    android:backgroundTint="#2E3A7C"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/respuesta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="52dp"
+        android:inputType="textMultiLine"
+        android:textColor="#09DDF8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/respuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="152dp"
+        android:inputType="textMultiLine"
+        android:textColor="#09DDF8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#0F8F83"
+        android:fontFamily="monospace"
+        android:onClick="api"
+        android:text="CONSUMI API"
+        android:textColor="#EF0707"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#117DAE"
+        android:fontFamily="sans-serif-black"
+        android:text="PARÁMETROS EN EL HEADER"
+        android:textColorHighlight="#BF1919"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="47dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
